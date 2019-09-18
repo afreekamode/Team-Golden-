@@ -1,128 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Noto Serif:400,800');
+
+*{
+    box-sizing: border-box;
+}
+
 body{
-    background: url(image/background.png) fixed;
-    font-family: 'Noto Serif';
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: white;
+    box-sizing: border-box;
 }
 .container{
+    background-color: #fff;
+    border-radius:10px;
+    box-shadow: 0 14px 20px rgba(0,0,0,0.25),
+                0 10px 10px rgba(0,0,0,0.22);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 800px;
+    max-width: 100%;
+    min-height: 550px;
+    justify-content: center;
+    align-items: center;
     display: flex;
-    margin-top: 50px;
-    box-shadow: #3AB397;
 }
-.login{
-    color: #7165C0;
-    font-size: 22px;
-    margin-bottom: 90px;
-    margin-top: 100px;
-    margin-left: 200px;
-    font-weight: 200;
-}
+
 .firstbox{
-    background-color: #ffffff;  
-    border-bottom-left-radius: 20px;
-    border-top-left-radius: 20px;
+    background:#FFFFFF;
+    height: 550px;
+    width: 95%;
+    position:relative;
+    margin: 0px;
+    border-radius: 10px 0 0 10px;
 }
 .secondbox{
-    background-color: #7165C0;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    background:#FFFFFF;
+    background:  #7165C0;
+    height: 550px;
+    position: relative;
+    width: 50%;
+    margin: 0;
+    border-radius: 0 10px 10px 0;
+    text-align: center;
+    left: 0%;
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 70px;
+    height: 100%;
+    text-align: center;
+    margin-top: 0px;
+}
+.input-container{
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+    background: #F4F8F7;
+}
+
+.input-field{
+    background-color: #F4F8F7;
+    border: 1px solid #F4F8F7;
+    padding: 12px 0px;
+    width: 100%;
+}
+.icon{
+    color: rgba(0,0,0,0.25);
+    padding: 12px 0px;
+    min-width: 50px;
+    text-align: center;
+}
+.overlay {
+    text-align: center;
 }
 .btn{
     border: 1px solid #FFFFFF;
     background-color: #7165C0;
     color: #FFFFFF;
     width: 150px;
-    margin-left: 95px;
+    margin-left: 0px 50px;
     border-radius: 20px;
-    margin-top: 25px;
+    margin-top: 10px;
     height: 40px;
 
 }
-.log{
+.btn-login{
     border: 1px solid #FFFFFF;
     background-color: #7165C0;
     color: #FFFFFF;
     width: 150px;
-    margin-left: 260px;
     border-radius: 20px;
-    margin-top: 25px;
     height: 40px;
-    margin-bottom: 60px;
-
-}
-.form-group{
     margin-bottom: 40px;
-    width: 500px;
-    
-}
-.form-group input{
-    font-size: 10px;
-    font-family: Noto Sans;
-    font-weight: 200;
-    padding-left: 55px;
-    background-color: #F4F8F7;
-    border: 1px solid #F4F8F7;
-}
-.far {
-    position: absolute;
-    margin-left: 105px;
-    padding: 15px;
-}
-.fas{
-    position: absolute;
-    margin-left: 105px;
-    padding: 13px;
-}
-.form-control{
-    height: 50px;
-    margin-left: 100px;
-    border-radius: 5px;
-}
-
-.hello{
-    color: #FFFFFF;
-    font-family: Noto Serif;
-    font-size: 16px;
-    letter-spacing: 2px;
-    margin-top: 200px;
-    margin-left: 100px;
 }
 .message{
     color: #ffffff;
-    font-family: Noto Sans;
+    font-size: 12px;
+    margin: 10px 35px 10px 35px;
+    text-align:center;
+    line-height: 20px;
+}
+.welcome{
+    color: #FFFFFF;
     font-size: 15px;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 40px;
+    letter-spacing: 2px;
+    margin-top: 160px;
+    margin-bottom: 0px;
     text-align: center;
 }
-.forget{
-    margin-left: 490px;
-    margin-top: -30px;
+.header{
+    color:#7165C0;
+    font-size: 22px;
+    margin: 20px 0px;
+    font-weight: 700;
+}
+span{
+    margin:10px 0px;
+    padding: 0px;
+}
+.social-container{
+    margin-bottom: 10px;
+}
+.social-container a{
+    border: 1px solid #000000;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    height: 40px;
+    width: 40px;
+}
+a{
+    text-decoration: none;
+    color: black;
     font-size: 12px;
-    color: black;
 }
-.forget a{
-    color: black;
-}
-
-.account{
-    margin-left: 250px;
-    margin-top: 40px;
-}
-.account a{
-    color: black;
-    font-size: 12px;
-}
-.socials{
-    margin-left: 250px;
-}
-.fab{
-    border: 2px solid black;
-    border-radius: 50px;
-    size: 30px;
-    padding: 8px;
-    margin: 10px;
-    color: black;
-}
-/* .fab fa-facebook-f{
-    border-radius: 2px;
-} */
