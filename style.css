@@ -5,9 +5,10 @@ body{
 .container{
     display: flex;
     margin-top: 50px;
+    box-shadow: #3AB397;
 }
 .login{
-    color: #3AB397;
+    color: #7165C0;
     font-size: 22px;
     margin-bottom: 90px;
     margin-top: 100px;
@@ -16,13 +17,17 @@ body{
 }
 .firstbox{
     background-color: #ffffff;  
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
 }
 .secondbox{
-    background-color: #3AB397;
+    background-color: #7165C0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 .btn{
     border: 1px solid #FFFFFF;
-    background-color: #3AB397;
+    background-color: #7165C0;
     color: #FFFFFF;
     width: 150px;
     margin-left: 95px;
@@ -31,9 +36,9 @@ body{
     height: 40px;
 
 }
-.btn-login{
+.log{
     border: 1px solid #FFFFFF;
-    background-color: #3AB397;
+    background-color: #7165C0;
     color: #FFFFFF;
     width: 150px;
     margin-left: 260px;
@@ -116,7 +121,8 @@ body{
     size: 30px;
     padding: 8px;
     margin: 10px;
+    color: black;
 }
-.fab fa-facebook-f{
+/* .fab fa-facebook-f{
     border-radius: 2px;
-}
+} */
