@@ -1,12 +1,15 @@
 
 let userData = JSON.parse(localStorage.getItem("userData")) || [];//getting local storage data
 let name;
+let username;
 let email;
 let pass;
+const reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
 let attempt = 3; // Variable to count number of attempts.
 
 userProfile = () => { userData.map(profile => {
 	name = profile.name;
+	user_name = profile.username;
 	email = profile.email;
 	pass = profile.pass;
 	return;
@@ -23,14 +26,14 @@ userProfile();
     alert ("Please input an email and Password!");
     return false;
   }
-if ( username == email && password == pass){
+if ( username == email || username == user_name && password == pass){
 	alert ("Login successfully "+name);
 	window.location.assign("success.html"); // Redirecting to other page.
 }
 else{
 const error = document.getElementById('errorLog');
 attempt --;// Decrementing by one.
-error.innerHTML = `<p style="color:red;font-size:.8em;">Wrong login detailes entered! <br>You have left ${attempt} attempt</p>`;
+error.innerHTML = `<p style="color:red;font-size:.8em;">Wrong login detailes entered! <br>You have ${attempt} attempt left!</p>`;
 
 // Disabling fields after 3 attempts.
 if( attempt == 0){
