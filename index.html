@@ -8,8 +8,9 @@
     <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
     crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Team Golden</title>
+    <script src="js/login.js"></script>
 </head>
 <body>
 
@@ -17,13 +18,14 @@
         <div class="firstbox">
                 <form action="">
                         <h5 class="header">LOGIN TO TEAM GOLDEN</h5>
+                        <span id="errorLog"></span>
                          <div class="input-container">
                             <i class="far fa-envelope icon"></i>
-                            <input  class="input-field" type="email" name="name" placeholder="Email">
+                            <input  class="input-field" type="email" name="name" id="username" placeholder="Email">
                         </div> 
                         <div class="input-container">
                             <i class="fas fa-lock icon"></i>
-                            <input  class="input-field" type="password" name="name" placeholder="Password">
+                            <input  class="input-field" type="password" name="name" id="password" placeholder="Password">
                         </div> 
                         <span><a href="#"> or use email for registration?</a></span>
                         <div class="social-container">
@@ -31,7 +33,7 @@
                             <a href="#" class="social"><i class="fab fa-google"></i></a>
                             <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
                         </div>
-                        <button class="btn-login">Login</button>
+                        <button class="btn-login" id="submit" onclick="validate(event)">Login</button>
                     </form>
         </div>
         
@@ -42,6 +44,5 @@
         </div>
 
     </div>
-
 </body>
 </html>

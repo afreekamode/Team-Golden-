@@ -57,6 +57,22 @@ form{
     text-align: center;
     margin-top: 0px;
 }
+.success{
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 70px;
+    height: 100%;
+    text-align: center;
+    margin-top: 0px;
+}
+#userImg{
+    border-radius: 50%;
+    border: 1px solid #7165C0;
+    width: 5rem;
+    padding: 7%;
+}
 .input-container{
     display: flex;
     width: 100%;

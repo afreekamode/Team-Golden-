@@ -8,7 +8,7 @@
     <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
     crossorigin="anonymous">
-    <link rel="stylesheet" href="./sign_up.css">
+    <link rel="stylesheet" href="css/sign_up.css">
     <title>Team Golden</title>
 </head>
 <body>
@@ -27,23 +27,23 @@
                     <h5 class="header">SIGNUP TO TEAM GOLDEN</h5>
                     <div class="input-container">
                         <i class="far fa-user icon"></i>
-                        <input  class="input-field" type="text" name="name" placeholder="Full Name">
+                        <input  class="input-field" type="text" name="name" id="fullname" placeholder="Full Name">
                     </div> 
                     <div class="input-container">
                          <i class="far fa-user icon"></i>
-                        <input  class="input-field" type="text" name="name" placeholder="Username">
+                        <input  class="input-field" type="text" name="name" id="username" placeholder="Username">
                     </div> 
                      <div class="input-container">
                         <i class="far fa-envelope icon"></i>
-                        <input  class="input-field" type="email" name="name" placeholder="Email">
+                        <input  class="input-field" type="email" name="name" id="email" placeholder="Email">
                     </div> 
                     <div class="input-container">
                         <i class="fas fa-lock icon"></i>
-                        <input  class="input-field" type="password" name="name" placeholder="Password">
+                        <input  class="input-field" type="password" name="name" id="pass" placeholder="Password">
                     </div> 
                     <div class="input-container">
                          <i class="fas fa-lock icon"></i>
-                         <input  class="input-field" type="password" name="name" placeholder="Confirm Password">
+                         <input  class="input-field" type="password" name="name" id="pass2" placeholder="Confirm Password">
                      </div> 
                     <span><a href="#"> or use email for registration?</a></span>
                     <div class="social-container">
@@ -51,12 +51,14 @@
                         <a href="#" class="social"><i class="fab fa-google"></i></a>
                         <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
                     </div>
-                    <button class="btn-signup">SignUp</button>
+                    <button class="btn-signup" id="saveDataBtn"
+            onclick="saveData(event)"
+            disabled>SignUp</button>
                     
                 </form>
         </div>
 
     </div>
-
+<script src="js/pass.js"></script>
 </body>
 </html>
